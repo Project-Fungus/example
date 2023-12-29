@@ -1,0 +1,12 @@
+.byte 0xFF
+.align 4
+.word 0xFFFF
+.align 4
+.long 0xFFFFFFFF
+
+main:
+ADR r1,TestData  ;load the address TestData
+LDRB r0,[r1]     ;loads 0x000000EF into r0 (assuming the CPU is operating as little-endian, otherwise it will load 0x000000DE)       
+BX LR
+TestData:
+.long 0xDEADBEEF
