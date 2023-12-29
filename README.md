@@ -2,6 +2,10 @@
 
 Sample ARM assembly projects.
 
+## Sample Output
+
+The `sample-output/` directory contains the JSON files produced by running `fungus arm --pretty`.
+
 ## Re-Running the Scraper
 
 The projects in this repository are scraped from [RosettaCode.org](https://rosettacode.org/wiki/Rosetta_Code). The following procedure is only necessary if you want to re-run the scraper.
